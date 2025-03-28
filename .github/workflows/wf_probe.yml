@@ -1,0 +1,11 @@
+name: wf-probe
+
+on: push
+
+jobs:
+
+  hello:
+    runs-on: macos-latest
+    steps: 
+      - uses: actions/checkout@v4
+      - run: ls -la
